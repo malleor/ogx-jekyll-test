@@ -60,6 +60,9 @@ hr {
 	text-align:justify;
 }
 
+#bottom-menu {
+	background: url("images/menuTop_spacer.gif") repeat-x
+}
 #bottom-menu img {
 	float:left
 }
