@@ -61,7 +61,7 @@ hr {
 }
 
 #bottom-menu {
-	background: url("images/menuTop_spacer.gif");
+	background: url("../images/menuTop_spacer.gif");
 	background-repeat: repeat-x;
 }
 #bottom-menu img {
