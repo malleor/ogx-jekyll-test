@@ -1,2 +1,3 @@
 available_languages: [en, pl]
 permalink: /:categories/:title/
+baseurl: http://malleor.github.com/ogx-jekyll-test/
