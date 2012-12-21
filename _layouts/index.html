@@ -33,7 +33,7 @@
 	</tr>
 	<tr>
 		<td colspan="5">
-			<a href="index.php?l={{page.language}}"><img src="images/{{page.language}}/index_04.gif" width="768" height="73"></a>
+			<a href="index-{{page.language}}.html"><img src="images/{{page.language}}/index_04.gif" width="768" height="73"></a>
 		</td>
 	</tr>
 	<tr>
@@ -64,10 +64,9 @@
   </tr>
 	<tr>
 		<td width="583" align="left" valign="top">
-			<p>
-				<!--Message was here, optionally.-->
-			</p>
-			<p><img src="images/spacer.gif" width="583" height="20"></p></td>
+			{{ content }}
+			<p><img src="images/spacer.gif" width="583" height="20"></p>
+		</td>
 		<td width="23">
 			<img src="images/index_13.gif" width="23" height="791"></td>
 		<td width="139" valign="top">
