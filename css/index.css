@@ -59,3 +59,7 @@ hr {
 	color:#FF0000;
 	text-align:justify;
 }
+
+#bottom-menu img {
+	float:left
+}
