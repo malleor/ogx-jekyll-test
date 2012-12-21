@@ -33,9 +33,7 @@
 	</tr>
 	<tr>
 		<td colspan="5">
-			{% for language in site.available_languages %}
-			<a href="index.php?l={{language}}"><img src="language/images/index_04.gif" width="768" height="73"></a>
-			{% endfor %}
+			<a href="index.php?l={{page.language}}"><img src="images/{{page.language}}/index_04.gif" width="768" height="73"></a>
 		</td>
 	</tr>
 	<tr>
