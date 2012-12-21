@@ -70,3 +70,10 @@ hr {
 
 #projects li {
 }
+
+.member-name, .member-position {
+	float: left;
+}
+.member-photo {
+	float: right;
+}
