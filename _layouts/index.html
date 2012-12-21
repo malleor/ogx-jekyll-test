@@ -1,0 +1,120 @@
+---
+---
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>OGX|OPTOGRAPHX</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta name="copyright" content="&copy; 2012 OGX|OPTOGRAPHICS, Instutut Micromechaniki i Fotoniki, Politechnika Warszawska">
+<meta name="keywords" lang="en-us" content="3D, 4D, graphics, measurements, scanning, optical, tracking, computer, vision, tv, television, mocap, motion capture, biomedical, biomechanics, multimedia, art, hitech, hi-tech, Poland, Europe">
+<meta name="keywords" lang="en" content="3D, 4D, graphics, measurements, scanning, optical, tracking, computer, vision, tv, television, mocap, motion capture, biomedical, biomechanics, multimedia, art, hitech, hi-tech, Poland, Europe">
+<meta name="keywords" lang="pl" content="3D, 4D, grafika, pomiary, skanowanie, optyczne, śledzenie, komputerowe, widzenie, tv, telewizja, mocap, motion capture, ledzenie ruchu, biomedycyna, biomechanika, multimedia, sztuka, hitech, hi-tech, Polska, Warszawa">
+<meta name="Description" lang="pl" content="OGX|OPTOGRAPHX jest grupą R&D IMiF PW, w skład której wchodzą specjaliści z wielu dziedzin współczensnej nauki: optyki, fotoniki i multimediów. Aktualny zakres prowadzonych projektów i prac badawczo-rozwojowych obejmuje: optyczne pomiary kształtu; widzenie maszynowe (śledzenie i analiza obiektów); multimedia (grafika trójwymiarowa i wirtualna rzeczywistość); biomechanikę (metody pomiaru i analizy ruchu).">
+<meta name="Description" lang="en" content="OGX|OPTOGRAPHX associates many specialists from several fields of science, for instance: optics, optoelectronics, image processing, programming, 3D graphics and visualization. Current range of projects and other research and development works: Optical shape measurements, Machine vision (object tracking and analysis), Multimedia (3D graphics and virtual reality), Biomechanics (shape measurements and gait analysis).">
+<meta name="Description" lang="en-us" content="OGX|OPTOGRAPHX associates many specialists from several fields of science, for instance: optics, optoelectronics, image processing, programming, 3D graphics and visualization. Current range of projects and other research and development works: Optical shape measurements, Machine vision (object tracking and analysis), Multimedia (3D graphics and virtual reality), Biomechanics (shape measurements and gait analysis).">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<link rel="SHORTCUT ICON" href="favicon.ico">
+<script src="javascript/menu.js" type="text/javascript"></script>
+<script src="javascript/columnize.js" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+<table id="TableMain" width="100%" height="1025" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	  <td width="50%" rowspan="2" bgcolor="#333333"></td>
+		<td rowspan="2">
+			<img src="images/index_01.gif" width="31" height="100"></td>
+		<td colspan="5">
+			<img src="images/index_02.gif" width="768" height="27"></td>
+		<td rowspan="2">
+			<img src="images/index_03.gif" width="31" height="100"></td>
+	    <td width="50%" rowspan="2" bgcolor="#333333"></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			{% for language in site.available_languages %}
+			<a href="index.php?l={{language}}"><img src="language/{{language}}/images/index_04.gif" width="768" height="73"></a>
+			{% endfor %}
+		</td>
+	</tr>
+	<tr>
+	  <td></td>
+		<td>
+			<img src="images/index_05.gif" width="31" height="23"></td>
+		<td colspan="5" bgcolor="#333333"><!--menuTop was here.--></td>
+		<td>
+			<img src="images/index_07.gif" width="31" height="23"></td>
+	    <td width="50%"></td>
+	</tr>
+	<tr>
+	  <td rowspan="3"></td>
+		<td rowspan="3" background="images/index_08.gif">
+			<img src="images/index_08.gif" width="31" height="814"></td>
+		<td colspan="5" align="center">
+			<img src="images/index_09.gif" width="768" height="23"></td>
+		<td rowspan="3" background="images/index_10.gif">
+			<img src="images/index_10.gif" width="31" height="814"></td>
+	    <td width="50%" rowspan="3"></td>
+	</tr>
+	<tr>
+	  <td width="23" rowspan="2" align="center" background="images/index_11.gif">
+	  <img src="images/index_11.gif" width="23" height="791"></td>
+      <td colspan="3" align="center"><!--Flash was here.--></td>
+      <td width="23" rowspan="2" align="center">
+	  <img src="images/index_15.gif" width="23" height="791"></td>
+  </tr>
+	<tr>
+		<td width="583" align="left" valign="top">
+			<p>
+				<!--Message was here, optionally.-->
+			</p>
+			<p><img src="images/spacer.gif" width="583" height="20"></p></td>
+		<td width="23">
+			<img src="images/index_13.gif" width="23" height="791"></td>
+		<td width="139" valign="top">
+			<!--Another freaking flash was here.-->
+		</td>
+	</tr>
+	<tr>
+	  <td rowspan="2"></td>
+		<td rowspan="2">
+			<img src="images/index_16.gif" width="31" height="46"></td>
+		<td colspan="5">
+			<!-- <img src="images/index_17.gif" width="768" height="23"> -->
+			{% for language in site.available_languages %}
+			<!--TODO: Make it an iteration over a list of projects.-->
+			<a href="index.php?l={{language}}"><img src="images/menuTop_arrowRight.gif" width="23" height="23"></a>
+			<a href="index.php?l={{language}}&p=projects_3dmadmac"><img src="images/menuBottom_3dmadmac.gif" width="85" height="23" border="0"></a>
+			<a href="index.php?l={{language}}&p=projects_aurora"><img src="images/menuBottom_aurora.gif" width="85" height="23" border="0"></a>
+			<a href="index.php?l={{language}}&p=projects_versatile"><img src="images/menuBottom_versatile.gif" width="85" height="23" border="0"></a>
+			<a href="index.php?l={{language}}&p=projects_virtualStudio"><img src="images/menuBottom_virtualStudio.gif" width="85" height="23" border="0"></a>
+			<img src="images/menuTop_terminator.gif" width="1" height="23"><img src="images/menuTop_spacer.gif" width="381" height="23">
+			<a href="#top"><img src="images/menuTop_arrowUp.gif" width="23" height="23" border="0"></a>
+			{% endfor %}
+		</td>
+		<td rowspan="2">
+			<img src="images/index_18.gif" width="31" height="46"></td>
+	    <td width="50%" rowspan="2"></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="images/index_19.gif" width="768" height="23" border="0" usemap="#MapCredits"></td>
+	</tr>
+	<tr>
+	  <td></td>
+		<td>
+			<img src="images/index_20.gif" width="31" height="42"></td>
+	  <td colspan="5" align="center" valign="middle" background="images/index_21.gif"><p>&nbsp;</p>		</td>
+		<td>
+			<img src="images/index_22.gif" width="31" height="42"></td>
+	    <td width="50%"></td>
+	</tr>
+</table>
+<map name="MapCredits">
+	<area shape="rect" coords="419,7,617,16" href="http://imif.mchtr.pw.edu.pl" target="_blank" alt="IMIF">
+	<area shape="rect" coords="625,7,763,16" href="http://www.pw.edu.pl" target="_blank" alt="PW">
+</map>
+<!--Google Analytics were here.-->
+</body>
+</html>
