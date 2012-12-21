@@ -3,3 +3,21 @@ language: en
 layout: index
 ---
 <strong>Main page goes here.</strong>
+
+<div id="projects">
+	<h2>Projects</h2>
+	<ul>
+		{% for project in site.categories.projects %}
+		<li><a href="{{project.url}}">{{ project.name }}</a> - {{ project.brief }}</li>
+		{% endfor %}
+	</ul>
+</div>
+
+<div id="members">
+	<h2>Members</h2>
+	<ul>
+		{% for member in site.categories.members %}
+		<li><a href="{{member.url}}">{{ member.name }}</a>, {{ member.function }}</li>
+		{% endfor %}
+	</ul>
+</div>
