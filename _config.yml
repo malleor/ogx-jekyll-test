@@ -1,1 +1,2 @@
 available_languages: [en, pl]
+permalink: /:categories/:title/
