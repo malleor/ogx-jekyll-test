@@ -8,7 +8,7 @@ layout: index
 	<h2>Projects</h2>
 	<ul>
 		{% for project in site.categories.projects %}
-		<li><a href="{{ site.baseurl }}{{ project.url }}">{{ project.name }}</a> - {{ project.brief }}</li>
+		<li><a href=".{{ project.url }}">{{ project.name }}</a> - {{ project.brief }}</li>
 		{% endfor %}
 	</ul>
 </div>
@@ -17,7 +17,7 @@ layout: index
 	<h2>Members</h2>
 	<ul>
 		{% for member in site.categories.members %}
-		<li><a href="{{ site.baseurl }}{{ member.url }}">{{ member.name }}</a>, {{ member.function }}</li>
+		<li><a href=".{{ member.url }}">{{ member.name }}</a>, {{ member.function }}</li>
 		{% endfor %}
 	</ul>
 </div>
