@@ -12,4 +12,4 @@ interests:
 - 2D/3D/4D processing
 - software technologies
 ---
-This is a personal content. One might provide extra info.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit. Nam mattis, arcu ut bibendum commodo, magna nisi tincidunt tortor, quis accumsan augue ipsum id lorem.

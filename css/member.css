@@ -1,0 +1,41 @@
+.member-portfolio {
+	max-width: 30em;
+	padding: 0.5em;
+	font-family: sans-serif;
+	position: relative;
+}
+.member-name {
+	display: block;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-right: 120px;
+	
+	font-size: 1.6em;
+	font-weight: bold;
+}
+.member-position {
+	display: block;
+	margin: 0;
+	padding-right: 120px;
+	
+	font-size: 0.9em;
+	font-style: italic;
+}
+.member-photo {
+	position: absolute;
+	top: 0.5em;
+	right: 0;
+	
+	padding: 3px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+}
+.member-info {
+	display: block;
+	position: absolute;
+	top: 120px;
+	padding: 0.5em;
+	
+	font-family: serif;
+	font-size: 1.1em;
+}
