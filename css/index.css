@@ -6,7 +6,7 @@ html {
 	margin: 0px;
 	background-color: #000000;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size:10px;
+	font-size:0.8em;
 }
 a {
 	color:#CCCCCC;
@@ -26,7 +26,7 @@ img {
 	border: 0;
 }
 td {
-	font-size:10px;
+	font-size:1em;
 	vertical-align: top;
 	color: #CCCCCC;
 }
