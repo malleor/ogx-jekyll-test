@@ -1,0 +1,36 @@
+---
+language: en
+layout: index
+css: [project]
+---
+{% capture _cont %}
+## Project {{ page.name }}
+
+**Subject**: {{ page.tagline }}
+
+**Type**: {{ page.type }}
+
+**Website**: [{{ page.website }}]({{ page.website }})
+{% endcapture %}
+
+{{ _cont | markdownify }}
+
+<ul class="project-members">
+	{% for member in site.categories.members %}
+		{% for project in member.projects %}
+			{% if project == page.name %}
+				<li><a href=".{{ member.url }}">{{ member.name }}</a></li>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+</ul>
+
+<div class="project-description">{{ content }}</div>
+
+<ul class="project-publications">
+	{% for publication in site.categories.publications %}
+		{% if publication.project == page.name %}
+			<li>{% include citation.txt %}</li>
+		{% endif %}
+	{% endfor %}
+</ul>

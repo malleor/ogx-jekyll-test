@@ -1,0 +1,42 @@
+.project-description {
+	margin-top: 2em;
+	padding: 0.5em;
+}
+
+.project-members {
+	display: block;
+	margin: 2em 0 0 0;
+	padding-right: 120px;
+	padding-left: 0;
+	list-style-type: none;
+}
+.project-members::before {
+	content: "Persons involved:";
+	font-weight: bold;
+}
+.project-members li {
+	display: inline-block;
+}
+.project-members li::after {
+	content: ", ";
+}
+.project-members li:last-of-type:after {
+	content: "";
+}
+
+.project-publications {
+	display: block;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	padding: 0 0.5em 0 2em;
+	list-style-type: square;
+}
+.project-publications::before {
+	content: "Dissemination of results: ";
+	position: relative;
+	left: -2em;
+	font-weight: bold;
+}
+.project-publications li {
+	margin-top: 0.2em;
+}
