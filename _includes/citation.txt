@@ -1,0 +1,1 @@
+{% for author in publication.authors %}{{ author }}, {% endfor %}{{ publication.title }}, {{ publication.journal }} {{ publication.volume }}, {{ publication.pages }} ({{ publication.year }}); doi: {{ publication.doi }}

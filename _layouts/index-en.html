@@ -19,3 +19,12 @@ layout: index
 		{% endfor %}
 	</ul>
 </div>
+
+<div id="publications">
+	<h2>Publications</h2>
+	<ul>
+		{% for publication in site.categories.publications %}
+		<li>{% include citation.html %}
+		{% endfor %}
+	</ul>
+</div>

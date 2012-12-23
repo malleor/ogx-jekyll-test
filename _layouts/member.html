@@ -6,8 +6,33 @@ css: [member]
 	<img class="member-photo" src="{{ page.photo }}" />
 	<div class="member-name">{{ page.name }}</div>
 	<div class="member-position">{{ page.position }}</div>
+	<ul class="member-projects">
+		{% for project_name in page.projects %}
+			{% capture project_markup %}{{ project_name }}{% endcapture %}
+			{% for project in site.categories.projects %}
+				{% if project.name == project_name %}
+					{% capture project_markup %}<a href=".{{ project.url }}">{{ project.name }}</a>{% endcapture %}
+				{% endif %}
+			{% endfor %}
+			<li>{{ project_markup }}</li>
+		{% endfor %}
+	</ul>
+	<ul class="member-interests">
+		{% for foi in page.interests %}
+			<li>{{ foi }}</li>
+		{% endfor %}
+	</ul>
 	<div class="member-info">
-	{{ content }}
+		{{ content }}
 	</div>
-	<!--TODO: Interest areas and publications should go in here.-->
+	<ul class="member-publications">
+		{% for publication in site.categories.publications %}
+			{% for author in publication.authors %}
+				{% if author == page.name %}
+					{% assign publication = page %}
+					<li>{% include citation.txt %}</li>
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	</ul>
 </div>

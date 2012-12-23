@@ -3,6 +3,7 @@
 	font-family: sans-serif;
 	position: relative;
 }
+
 .member-name {
 	display: block;
 	margin: 0;
@@ -12,6 +13,7 @@
 	font-size: 1.6em;
 	font-weight: bold;
 }
+
 .member-position {
 	display: block;
 	margin: 0;
@@ -20,18 +22,79 @@
 	font-size: 0.9em;
 	font-style: italic;
 }
+
 .member-photo {
 	float: right;
+	width: 100px;
+	height: 100px;
 	
 	padding: 3px;
 	background: black;
-	box-shadow: 0 2px 10px rgba(255, 255, 255, 0.75);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
 }
+
+.member-projects {
+	display: block;
+	margin: 2em 0 0 0;
+	padding-right: 120px;
+	padding-left: 0;
+	list-style-type: none;
+}
+.member-projects::before {
+	content: "Projects:";
+	font-weight: bold;
+}
+.member-projects li {
+	display: inline-block;
+}
+.member-projects li::after {
+	content: ", ";
+}
+.member-projects li:last-of-type:after {
+	content: "";
+}
+
+.member-interests {
+	display: block;
+	margin-top: 2em;
+	margin-bottom: 0;
+	padding: 0 120px 0 2em;
+	list-style-type: square;
+}
+.member-interests::before {
+	content: "Fields of interest: ";
+	position: relative;
+	left: -2em;
+	font-weight: bold;
+}
+.member-interests li {
+	margin-top: 0.2em;
+}
+
 .member-info {
 	display: block;
 	clear: right;
+	margin-top: 2em;
+	margin-bottom: 0;
 	padding: 0.5em;
 	
 	font-family: serif;
 	font-size: 1.1em;
+}
+
+.member-publications {
+	display: block;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	padding: 0 0.5em 0 2em;
+	list-style-type: square;
+}
+.member-publications::before {
+	content: "Publications: ";
+	position: relative;
+	left: -2em;
+	font-weight: bold;
+}
+.member-publications li {
+	margin-top: 0.2em;
 }
