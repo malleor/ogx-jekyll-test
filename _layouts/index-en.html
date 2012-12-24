@@ -28,3 +28,12 @@ layout: index
 		{% endfor %}
 	</ul>
 </div>
+
+<div id="news">
+	<h2>News feed</h2>
+	<ul>
+		{% for news in site.categories.news %}
+		<li><a href=".{{ news.url }}">{{ news.title }}</a></li>
+		{% endfor %}
+	</ul>
+</div>

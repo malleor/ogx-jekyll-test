@@ -1,0 +1,29 @@
+.news-title {
+}
+
+.news-members {
+	display: block;
+	margin: 1em 0 0 0;
+	padding-right: 120px;
+	padding-left: 0;
+	list-style-type: none;
+}
+.news-members::before {
+	content: "Persons involved:";
+	font-weight: bold;
+}
+.news-members li {
+	display: inline-block;
+}
+.news-members li::after {
+	content: ", ";
+}
+.news-members li:last-of-type:after {
+	content: "";
+}
+
+.news-body {
+	display: block;
+	margin-top: 2em;
+	padding: 0.5em;
+}

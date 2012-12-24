@@ -8,7 +8,7 @@ css: [member]
 	<div class="member-position">{{ page.position }}</div>
 	<ul class="member-projects">
 		{% for project_name in page.projects %}
-			{% capture project_markup %}{{ project_name }}{% endcapture %}
+			{% assign project_markup = project_name %}
 			{% for project in site.categories.projects %}
 				{% if project.name == project_name %}
 					{% capture project_markup %}<a href=".{{ project.url }}">{{ project.name }}</a>{% endcapture %}

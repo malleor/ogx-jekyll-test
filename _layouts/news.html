@@ -1,0 +1,19 @@
+---
+layout: index
+css: [news]
+---
+<h2 class="news-title">{{ page.title }}</h2>
+
+<ul class="news-members">
+	{% for member_name in page.members %}
+		{% assign member_markup = member_name %}
+		{% for member in site.categories.members %}
+			{% if member.name == member_name %}
+				{% capture member_markup %}<a href=".{{ member.url }}">{{ member.name }}</a>{% endcapture %}
+			{% endif %}
+		{% endfor %}
+		<li>{{ member_markup }}</li>
+	{% endfor %}
+</ul>
+
+<div class="news-body">{{ content }}</div>
